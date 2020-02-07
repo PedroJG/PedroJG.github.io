@@ -8,7 +8,7 @@
 .navBar {
   border: 1px solid black;
   display: flex;
-  flex: 1;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -24,9 +24,10 @@
 }
 
 .container {
-  margin: 2%;
+  margin: 1%;
   height: 100%;
   display: grid;
+  align-items: center;
   grid-template-columns: 60% 40%;
   grid-template-rows: 50% 50%;
 }
@@ -41,12 +42,14 @@
 
 #showcase2 {
   height: 98%;
-  width: 98%;
+  width: 100%;
   align-self: flex-start;
+  justify-self: ;
 }
 
 #showcase3 {
   height: 98%;
-  width: 98%;
+  width: 100%;
   align-self: flex-end;
+  justify-self: end;
 }
