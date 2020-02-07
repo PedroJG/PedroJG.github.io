@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.navBar {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.navBar > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navBar li {
+  flex: 1;
+  list-style-type: none;
+  color: inherit;
+}
+
+.container {
+  margin: 2%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 66% 34%;
+  grid-template-rows: 50% 50%;
+}
+
+.container * {
+}
+
+#showcase1 {
+  width: 95%;
+  grid-row: 1/3;
+}
+
+#showcase2 {
+  height: 98%;
+  width: 98%;
+  align-self: center;
+}
+
+#showcase3 {
+  height: 98%;
+  width: 98%;
+  align-self: center;
+}
