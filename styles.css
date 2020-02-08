@@ -53,3 +53,28 @@
   align-self: flex-end;
   justify-self: end;
 }
+
+.news {
+  margin: 1%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#title {
+  margin: 5% 1%;
+  border: 1px solid black;
+}
+
+@media (min-width: 600px)  {
+  .new {
+    max-width: 48%;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .new {
+    width: 96%;
+  }
+}
