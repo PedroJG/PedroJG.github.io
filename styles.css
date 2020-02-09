@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  /*border: 1px solid black;*/
 }
 
 .navBar {
@@ -23,16 +22,13 @@
   color: inherit;
 }
 
-.container {
+.showcase {
   margin: 1%;
   height: 100%;
   display: grid;
   align-items: center;
   grid-template-columns: 60% 40%;
   grid-template-rows: 50% 50%;
-}
-
-.container * {
 }
 
 #showcase1 {
@@ -44,7 +40,6 @@
   height: 98%;
   width: 100%;
   align-self: flex-start;
-  justify-self: ;
 }
 
 #showcase3 {
@@ -54,26 +49,34 @@
   justify-self: end;
 }
 
-.news {
-  margin: 1%;
+.container {
+  margin: 0 1%;
+}
+
+#news {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
 }
 
-#title {
-  margin: 5% 1%;
+.title {
+  width: 100%;
+  margin-top: 5%;
   border: 1px solid black;
 }
 
-@media (min-width: 600px)  {
+.new {
+  margin-top: 3%;
+}
+
+@media (min-width: 650px)  {
   .new {
     max-width: 48%;
     min-width: 300px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .new {
     width: 96%;
   }
