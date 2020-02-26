@@ -1,0 +1,36 @@
+html {
+  height: 100;
+}
+
+#chords {
+  margin: 2% 0% 2% 0%;
+  height: 3em;
+  line-height: 3em;
+  padding-left: 5px;
+}
+
+.content {
+  height: 100%;
+}
+
+.chords {
+  width: 100%;
+  height: 100%;
+}
+
+.chords iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.acorde {
+  height: 6vh;
+  width: 80px;
+  border: 1px solid black;
+  margin: 0;
+}
+
+.acorde a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -88,6 +88,10 @@ body {
   .new {
     width: 96%;
   }
+
+  footer {
+    font-size: 0.8em;
+  }
 }
 
 .band {
