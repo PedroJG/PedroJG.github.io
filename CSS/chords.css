@@ -24,7 +24,7 @@ html {
 }
 
 .acorde {
-  height: 6vh;
+  height: 8vh;
   width: 80px;
   border: 1px solid black;
   margin: 0;
@@ -33,4 +33,46 @@ html {
 .acorde a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  line-height: 8vh;
+}
+
+.acorde:hover {
+  background-color: red;
+}
+
+.acorde > a:visited {
+  background-color: aquamarine;
+}
+
+@media (max-width: 650px) {
+ .acorde {
+   height: 7.7vh;
+ }
+
+ .acorde a {
+   line-height: 7.7vh;
+ }
+}
+
+@media (max-height: 650px) {
+  .acorde {
+    height: 7.4vh;
+  }
+ 
+  .acorde a {
+    line-height: 7.4vh;
+  }
+}
+
+@media (max-height: 600px) {
+  .acorde {
+    height: 7vh;
+  }
+ 
+  .acorde a {
+    line-height: 7vh;
+  }
 }
