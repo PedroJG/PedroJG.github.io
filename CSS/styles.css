@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  background-color: #F0F0F0;
 }
 
 body {
@@ -20,15 +21,20 @@ body {
   text-decoration: none;
 }
 
-.desplegable {
-}
-
-.contenido {
-  width: 100px;
-  display: none;
+.contenido{
+  width: 150px;
   z-index: 1;
   position: absolute;
   background-color: azure;
+  display: none;
+}
+
+.contenido a {
+  display: block;
+}
+
+.contenido a:hover {
+  background-color: red;
 }
 
 .desplegable:hover .contenido {

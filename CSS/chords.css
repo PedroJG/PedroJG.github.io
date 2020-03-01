@@ -43,10 +43,6 @@ html {
   background-color: red;
 }
 
-.acorde > a:visited {
-  background-color: aquamarine;
-}
-
 @media (max-width: 650px) {
  .acorde {
    height: 7.7vh;
