@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: #F0F0F0;
 }
 
 body {
@@ -81,10 +80,15 @@ body {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 0;
 }
 
 #news > h1 {
   margin-bottom: 2%;
+}
+
+#news > .title {
+  margin-top: 0px;
 }
 
 .title {
