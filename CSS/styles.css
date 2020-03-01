@@ -15,13 +15,27 @@ body {
   justify-content: space-evenly;
 }
 
-.navBar > a {
+.navBar a {
   color: inherit;
   text-decoration: none;
 }
 
+.desplegable {
+}
+
+.contenido {
+  width: 100px;
+  display: none;
+  z-index: 1;
+  position: absolute;
+  background-color: azure;
+}
+
+.desplegable:hover .contenido {
+  display: block;
+}
+
 .navBar li {
-  flex: 1;
   list-style-type: none;
   color: inherit;
 }
