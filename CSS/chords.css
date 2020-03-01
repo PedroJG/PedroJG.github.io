@@ -24,7 +24,7 @@ html {
 }
 
 .acorde {
-  height: 8vh;
+  height: 7.5vh;
   width: 80px;
   border: 1px solid black;
   margin: 0;
@@ -36,7 +36,7 @@ html {
   display: inline-block;
   height: 100%;
   width: 100%;
-  line-height: 8vh;
+  line-height: 7.5vh;
 }
 
 .acorde:hover {
