@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Guitar</title>
-    <link rel="stylesheet" href="CSS/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul class="navBar">
-          <li class="desplegable"><a href="./index.html">Inicio
-            <div class="contenido">
-              <a href="#news">
-              Noticias
-              </a>
-              <a href="#bands">
-                Artistas
-              </a>
-              <a href="#soloOfTheWeek">
-                Solo de la semana
-              </a>
-              <a href="#pastWeeks">
-                Semanas anteriores
-              </a>
-            </div>
-          </a>
-          </li>
-        
-          <li><a href="HTML/chords.html">Acordes</a></li>
-          <li class="desplegable"><a href="HTML/equipamiento.html">Equipamiento
-            <div class="contenido">
-                <a href="HTML/equipamiento.html#gear1"> Guitarras &lt; 500€ </a>
-                <a href="HTML/equipamiento.html#gear2"> Guitarras &lt; 1000€ </a>
-            </div>
-        </a></li>
-          <li class="desplegable"><a href="HTML/tecnicas.html">Técnicas
-            <div class="contenido">
-              <a href="HTML/tecnicas.html#vibrato">
-                  Vibrato
-                </a>
-                <a href="HTML/tecnicas.html#ligado">
-                  Ligado
-                </a>
-                <a href="HTML/tecnicas.html#muting">
-                  Palm muting
-                </a>
-                <a href="HTML/tecnicas.html#fingerpicking">
-                  Fingerpicking
-                </a>
-                <a href="HTML/tecnicas.html#slide">
-                  Slide
-                </a>
-            </div>
-          </a></li>
-          <li><a href="HTML/xml.html">XML</a></li>
-        </ul>
-      </nav>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Guitar</title>
+  <!-- <link rel="stylesheet" href="CSS/styles.css" /> -->
+  <link rel="stylesheet" href="CSS/nav.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="navBar">
+        <!-- Inicio -->
+        <li>
+          <a href="#">Inicio</a>
+          <ul>
+            <li>
+              <a href="#news"> Noticias </a>
+            </li>
+            <li>
+              <a href="#bands"> Artistas </a>
+            </li>
+            <li>
+              <a href="#soloOfTheWeek"> Solo de la semana </a>
+            </li>
+            <li>
+              <a href="#pastWeeks"> Semanas anteriores </a>
+            </li>
+          </ul>
+        </li>
+        <!-- Acordes -->
+        <li>
+          <a href="HTML/chords.html">Acordes</a>
+        </li>
+        <!-- Equipamiento -->
+        <li>
+          <a href="HTML/equipamiento.html">Equipamiento</a>
+          <ul>
+            <li>
+              <a href="HTML/equipamiento.html#gear1"> Guitarras &lt; 500€ </a>
+            </li>
+            <li>
+              <a href="HTML/equipamiento.html#gear2"> Guitarras &lt; 1000€ </a>
+          </ul>
+        </li>
+        <!-- Técnicas -->
+        <li>
+          <a href="HTML/equipamiento.html">Técnicas</a>
+          <ul>
+            <li>
+              <a href="HTML/tecnicas.html#vibrato"> Vibrato </a>
+            </li>
+            <li>
+              <a href="HTML/tecnicas.html#ligado"> Ligado </a>
+              <a href="HTML/tecnicas.html#muting"> Palm muting </a>
+              <a href="HTML/tecnicas.html#fingerpicking"> Fingerpicking </a>
+              <a href="HTML/tecnicas.html#slide"> Slide </a>
+          </ul>
+        </li>
+        <!-- XML -->
+        <li>
+          <a href="HTML/xml.html">XML</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="contenedor">
+
     <section id="members">
       <a href="HTML/register.html">Registrarse</a>
       <a href="HTML/login.html"> Iniciar sesión</a>
@@ -211,11 +222,7 @@
             Solo de la semana
           </h1>
           <div class="aspectRatio">
-            <iframe
-              src="https://www.youtube.com/embed/wvlfMkfoeI0?start=283"
-              frameborder="0"
-              id="solo"
-            ></iframe>
+            <iframe src="https://www.youtube.com/embed/wvlfMkfoeI0?start=283" frameborder="0" id="solo"></iframe>
           </div>
         </div>
         <aside>
@@ -237,23 +244,16 @@
           Anteriores semanas
         </h1>
         <div id="solos">
-          <iframe
-            src="https://www.youtube.com/embed/w6Y3mKy8s2k"
-            frameborder="0"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/ptgWiqYDlyo"
-            frameborder="0"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/k8k5PRsfOvM"
-            frameborder="0"
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/w6Y3mKy8s2k" frameborder="0"></iframe>
+          <iframe src="https://www.youtube.com/embed/ptgWiqYDlyo" frameborder="0"></iframe>
+          <iframe src="https://www.youtube.com/embed/k8k5PRsfOvM" frameborder="0"></iframe>
         </div>
       </section>
     </section>
-    <footer>
-      Copyright © 2020 PedroJG Guitar ES | Todos los derechos reservados
-    </footer>
-  </body>
+  </div>
+  <footer>
+    Copyright © 2020 PedroJG Guitar ES | Todos los derechos reservados
+  </footer>
+</body>
+
 </html>
