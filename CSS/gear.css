@@ -1,0 +1,53 @@
+#gear {
+    height: 3em;
+    line-height: 3em;
+    margin: 2% 0 0 0;
+}
+
+#medium::before {
+    margin-top:0 ;
+}
+
+.gear {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+}
+
+.new {
+    text-align: center;
+    max-width: 45%;
+    min-width: 350px;
+}
+
+.new p {
+    text-align: left;
+}
+
+.guitar img {
+    width: 60%;
+}
+
+@media (max-height: 450px) {
+    .new {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #gear {
+        margin-bottom: 0;
+    }
+
+    .guitar img {
+        height: 200px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .guitar img{
+        width: auto;
+        height: 500px;
+    }
+}
