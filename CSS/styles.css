@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+#members {
+  text-align: right;
+}
+
+#members a {
+ text-decoration: none;
+ color: inherit;
+ margin: 0 1%;
+}
+
 body {
   overflow: auto;
 }
@@ -46,7 +56,7 @@ body {
 }
 
 .showcase {
-  margin: 1%;
+  margin: 0 1% 1% 1%;
   height: 100%;
   display: grid;
   align-items: center;
@@ -183,5 +193,11 @@ footer {
   height: 20px;
   border: 1px solid black;
   margin-bottom: 2px;
+  text-align: center;
+}
+
+#enconstruccion {
+  height: 95vh;
+  line-height: 95vh;
   text-align: center;
 }
