@@ -124,7 +124,7 @@ footer {
 
 .new {
   margin-top: 3%;
-  box-shadow: -11px 14px 23px 3px rgba(0,0,0,0.75);
+  box-shadow: 13px 15px 11px -8px rgba(158,158,158,1);
 }
 
 @media (min-width: 650px) {
