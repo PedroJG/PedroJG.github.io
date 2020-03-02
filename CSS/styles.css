@@ -2,11 +2,17 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  color: #4F2F3D;
+  color: black;
+  background-color: #f0f0f0;
+}
+
+:root {
+  background-color: #FFF ;
 }
 
 #members {
   text-align: right;
+  margin-bottom: 2%;
 }
 
 #members a {
@@ -19,8 +25,11 @@ body {
   overflow: auto;
 }
 
+h1 {
+  color: black;
+}
+
 .navBar {
-  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -35,7 +44,6 @@ body {
   width: 150px;
   z-index: 1;
   position: absolute;
-  background-color: azure;
   display: none;
 }
 
@@ -84,11 +92,14 @@ body {
 }
 
 .content{
-  background-color: #C0F5FA;
 }
 
 .container {
   margin: 0 1%;
+
+}
+
+footer {
 }
 
 #news {
@@ -109,11 +120,11 @@ body {
 .title {
   width: 100%;
   margin: 7% 0 5% 0;
-  border: 1px solid black;
 }
 
 .new {
   margin-top: 3%;
+  box-shadow: -11px 14px 23px 3px rgba(0,0,0,0.75);
 }
 
 @media (min-width: 650px) {
@@ -134,7 +145,6 @@ body {
 }
 
 .band {
-  border: 1px solid black;
   overflow: auto;
   padding: 1%;
   margin-bottom: 3%;
@@ -196,7 +206,6 @@ footer {
   margin: auto;
   width: 98%;
   height: 20px;
-  border: 1px solid black;
   margin-bottom: 2px;
   text-align: center;
 }
