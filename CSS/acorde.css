@@ -1,7 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap");
+
 :root {
   text-align: center;
 }
 
+h1 {
+  font-family: "Roboto";
+}
+
 p {
   text-align: justify;
+  margin: 10px;
+  font-family: "Roboto";
+}
+
+img {
+  min-width: 100px;
+  width: 30%;
+  height: auto;
+  float: left;
+  margin: 0 30px;
+}
+
+audio {
+  display: inline-block;
+  width: 80vw;
+  margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 0.8em;
+  }
+
+  img {
+    margin: 0 15px;
+  }
 }

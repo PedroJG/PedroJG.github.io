@@ -43,6 +43,12 @@ html {
   background-color: red;
 }
 
+.acorde > a > img {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 650px) {
  .acorde {
    height: 7.7vh;
