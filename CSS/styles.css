@@ -3,11 +3,6 @@
   padding: 0px;
   box-sizing: border-box;
   color: black;
-  background-color: #f0f0f0;
-}
-
-:root {
-  background-color: #FFF ;
 }
 
 #members {
@@ -29,39 +24,93 @@ h1 {
   color: black;
 }
 
-.navBar {
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  justify-items: center;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*
+    MENU
+*/
+
+nav > ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  width: 100%;
+  padding: 12px 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+nav > ul > li:hover {
+  background:linear-gradient(90deg, #49a5cc 0%,#023141 100% );
+  color: white;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+    color: inherit;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  width: 100%;
+  height: 100%;
+}
+
+nav > ul > li > a > .contenido:hover {
+  display: block;
+  position: absolute;
+}
+
+/* 
+    SUB MENU
+*/
+
+nav > ul > li > ul {
+  display: none;
+  margin-top: 12px;
+  position: absolute;
+  padding: 0;
+  width: 20%;
+  border-radius: 1px 8px 1px 8px;
+  background-color: rgba(0, 0, 0, 0.671);
+  position: absolute;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
-.navBar a {
-  color: inherit;
-  text-decoration: none;
+nav > ul > li:hover > ul {
+  display: flex;
 }
 
-.contenido{
-  width: 150px;
-  z-index: 1;
-  position: absolute;
-  display: none;
-}
-
-.contenido a {
-  display: block;
-}
-
-.contenido a:hover {
-  background-color: red;
-}
-
-.desplegable:hover .contenido {
-  display: block;
-}
-
-.navBar li {
+nav > ul > li > ul > li {
   list-style-type: none;
-  color: inherit;
+  padding: 8px;
+  border-radius: 1px 8px 1px 8px;
+
+}
+
+nav > ul > li > ul > li:hover {
+  background:linear-gradient(90deg, #49a5cc 0%,#023141 100% );
+}
+
+nav > ul > li > ul > li > a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 12px;
 }
 
 .showcase {
