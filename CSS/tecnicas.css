@@ -1,49 +1,60 @@
-video {
-    width: 55%;
-    max-width: 800px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  color: #fbfcff
 }
 
 .tech {
-    overflow: auto;
-    clear: both;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 79vh;
+  align-items: center;
 }
 
-.tech ul {
-    width:  45%;
-    display: inline;
+.tech > div {
+  width: 40vw;
+  height: calc(40vw * 0.56);
+  border-radius: 12px;
 }
 
-.tech ul li {
-    width: 45%;
+.tech > .derecha {
+  height: calc(40vw * 0.3);
+  background-color: #2F2F30;
+  padding: 15px;
 }
 
-.izquierda video{
-    float: left;
+.tech iframe {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
 }
 
-.derecha video{
-    float: right;
+.izquierda {
+  flex-basis: 40%;
 }
 
-footer {
-    clear: both;
+.derecha {
+  flex-basis: 25%;
+  margin-left: 3em;
 }
 
-#vibrato .title {
-    margin-top: 3%;
+.ligado > .izquierda,
+.fingerpick > .izquierda {
+  order: 2;
 }
 
-.izquierda p {
-    float:right;
-    width: 45%;
+.ligado > .derecha,
+.fingerpick > .derecha {
+  margin-right: 3em;
 }
 
-.derecha ul {
-    clear: both;
-    float: left;
+.fingerpick > .derecha > ul {
+  list-style-type: none;
+  padding: 25px 0;
 }
 
-.derecha p {
-    float:left;
-    width: 45%;
+.fingerpick > .derecha > ul > li {
+  font-weight: bold;
 }
