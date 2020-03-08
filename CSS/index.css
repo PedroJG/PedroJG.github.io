@@ -39,10 +39,11 @@ body {
   .new img {
     width: auto;
     height: 100px;
+    border-radius: 4px;
   }
 
   .new p {
-    padding: 0 0 0 15px;
+    padding: 0 12px;
     align-self: center;
     flex: 2;
   }
