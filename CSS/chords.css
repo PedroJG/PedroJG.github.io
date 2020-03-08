@@ -23,7 +23,7 @@ body {
     width: 100%;
     height: auto;
     max-height: 150px;
-    opacity: 60%;
+    opacity: 50%;
 }
 
 .top {
@@ -43,23 +43,22 @@ body {
 
 .left {
     flex: 1;
-    margin-right: 5vw;
     display: grid;
-    align-content: space-evenly;
-    justify-content: space-evenly;
+    align-content: center;
+    justify-content: center;
     align-items: center;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    grid-gap: 5px;
+    grid-gap: 20px;
 }
 
 .left img {
-    max-width: 180px;
+    max-width: 92px;
     min-width: 60px;
-    width: 60%;
+    width: 100%;
     height: auto;
     border: 1px solid #fff;
-    border-radius: 12px;
+    /*border-radius: 12px;*/
 }
 
 .left > a {
@@ -72,9 +71,11 @@ body {
 
 .right {
     flex: 1;
-    height: 85%;
+    height: 80%;
     justify-content: center;
+    align-content: center;
     align-self: center;
+    align-items: center;
     background-color: #BFC0C0;
     border-radius: 12px;
 }

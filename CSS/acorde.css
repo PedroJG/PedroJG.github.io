@@ -16,10 +16,11 @@ p {
 
 img {
   min-width: 100px;
-  width: 30%;
+  width: 28%;
   height: auto;
   float: left;
   margin: 0 30px;
+  border-radius: 8px;
 }
 
 audio {

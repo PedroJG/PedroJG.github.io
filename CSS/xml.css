@@ -1,0 +1,7 @@
+#enconstruccion {
+    display: flex;
+    margin-top: 42px;
+    height: calc(100vh - 70px);
+    justify-content: center;
+    align-items: center;
+}
