@@ -1,8 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #enconstruccion {
     display: flex;
     margin-top: 42px;
-    height: calc(100vh - 70px);
+    height: 47.5vh;
     justify-content: center;
     align-items: center;
     font-family: "Roboto";
+    padding: 0 100px;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+#enconstruccion > img {
+    width: 400px;
 }

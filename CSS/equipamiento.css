@@ -29,7 +29,7 @@ body {
 }
 
 #slider > div {
-  background-color: #2F2F30;
+  background-color: #fff;
 }
 
 .slide {
@@ -43,22 +43,31 @@ body {
 }
 
 .slide > h1 {
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 80px;
+  text-align: start;
+  background-color: #2F2F30;
+  padding: 20px;
+  width: 400px;
+  height: 280px;
+  border-radius: 12px;
 }
 
 .slide > h3 {
   color: #49C6E5;
+  margin-left: 20px;
+  margin-top: 90px;
 }
 
 .slide > p {
+  margin-top: 90px;
+  margin-left: 20px;
   grid-column: 2;
 }
 
 .slide.active {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 350px 30px 120px;
+  grid-template-columns: 250px 300px;
+  grid-template-rows: 100px 30px 370px;
 }
 
 .slide > img {
@@ -67,6 +76,8 @@ body {
   height: 500px;
   width: 200px;
   grid-row: 1/3;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.4);
+  margin-right: 200px;
 }
 
 .arrow {
