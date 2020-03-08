@@ -77,13 +77,13 @@ body {
     opacity: 100%;
   }
 
-  .band > img {
+  .band img {
     width: 100%;
     height: 100%;
     border-radius: 6px;
   }
 
-  .band > h1 {
+  .band h1 {
     display: none;
     color: #2F2F30;
   }
@@ -92,7 +92,7 @@ body {
     opacity: 40%;
   }
 
-  .band:hover > h1 {
+  .band:hover h1 {
     display: block;
   }
 

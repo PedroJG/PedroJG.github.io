@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Guitar</title>
-    <link rel="stylesheet" href="../CSS/styles.css" />
-    <link rel="stylesheet" href="../CSS/gear.css">
-    <link rel="stylesheet" href="../CSS/navBar.css">
+    <link rel="stylesheet" href="../CSS/separadores.css" />
+    <link rel="stylesheet" href="../CSS/navBar.css" />
+    <link rel="stylesheet" href="../CSS/equipamiento.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../JAVASCRIPT/functions.js"></script>
   </head>
   <body>
     <header>
@@ -37,11 +39,11 @@
             <a href="equipamiento.html">Equipo</a>
             <ul>
               <li>
-                <a href="equipamiento.html#gear1"> Guitarras &lt; 500€ </a>
+                <a href="equipamiento.html#guitars">Guitarras</a>
               </li>
               <li>
-                <a href="equipamiento.html#gear2">
-                  Guitarras &lt; 1000€
+                <a href="equipamiento.html#amps">
+                  Amplificadoress
                 </a>
               </li>
             </ul>
@@ -74,72 +76,95 @@
         </ul>
       </nav>
     </header>
-    <section class="content container">
-        <h1 class="title gears" id="gear1">Guitarras hasta 500€</h1>
-        <section class="container gear" id="cheap">
-            <section class="guitar new" id="fenderSquier">
-                <h1 class="title"> Fender Squier Bullet Stratocaster</h1>
-                <img src="../Images/squier.png" alt="">
-                <p> Precio: 120$</p>
-                <p>
-                    Esta guitarra
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, delectus possimus dolore saepe qui harum numquam nisi rerum nemo laborum, quisquam maxime.</p>
-            </section>
-            <section class="guitar new" id="pacifica">
-                <h1 class="title"> Yamaha Pacifica 112V</h1>
-                <img src="../Images/pacifica.png" alt="">
-                <p> Precio: 200$</p>
-                <p>
-                    Esta guitarra
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, delectus possimus dolore saepe qui harum numquam nisi rerum nemo laborum, quisquam maxime.</p>
-            </section>
-            <section class="guitar new" id="ibanez">
-                <h1 class="title"> Ibanez Gio GRG170DX</h1>
-                <img src="../Images/ibanez.png" alt="">
-                <p> Precio: 250$</p>
-                <p>
-                    Esta guitarra
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, delectus possimus dolore saepe qui harum numquam nisi rerum nemo laborum, quisquam maxime.</p>
-            </section>
-            <section class="guitar new" id="jackson">
-                <h1 class="title"> Jackson JS22</h1>
-                <img src="../Images/jackson.png" alt="">
-                <p> Precio: 250$</p>
-                <p>
-                    Esta guitarra
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, delectus possimus dolore saepe qui harum numquam nisi rerum nemo laborum, quisquam maxime.</p>
-            </section>
-        </section>
-    </section>
-    <section class="content container">
-        <h1 class="title gears" id="gear2">Guitarras hasta 1000€</h1>
-        <section class="container gear" id="medium">
-            <section class="guitar new" id="PRS">
-                <h1 class="title"> PRS SE Custom 24</h1>
-                <img src="../Images/PRS.png" alt="">
-                <p> Precio: 750$</p>
-                <p>
-                    Esta guitarra
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, delectus possimus dolore saepe qui harum numquam nisi rerum nemo laborum, quisquam maxime.</p>
-            </section>
-            <section class="guitar new" id="rg550">
-                <h1 class="title"> Ibanez RG550</h1>
-                <img src="../Images/rg550.png" alt="">
-                <p> Precio: 999$</p>
-                <p>
-                    Esta guitarra
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, delectus possimus dolore saepe qui harum numquam nisi rerum nemo laborum, quisquam maxime.</p>
-            </section>
-        </section>
-    </section>
-    <footer>
-        Copyright © 2020 PedroJG Guitar ES | Todos los derechos reservados
-      </footer>
+    <div class="flex">
+      <section class="titulo" id="titulo1">
+        <h1>Guitarras</h1>
+      </section>
+      <img
+        src="../Images/Separator/varios-11.jpg"
+        alt=""
+        class="separador sep1"
+        id="guitars"
+      />
+      <div id="guitarras">
+        <p id="left-arrow" class="arrow"><</p>
+        <div id="slider">
+          <div class="slide active">
+            <img src="../Images/squier.png" alt="" />
+            <h1>Fender Squier Bullet Stratocaster</h1>
+            <h3>120€</h3>
+            <p>
+              Esta guitarra es perfecta para principiantes. Con su precio
+              asequible y su increíble calidad es la guitarra ideal para la
+              mayoría de personas que acaban de empezar
+            </p>
+          </div>
+          <div class="slide">
+            <img src="../Images/pacifica.png" alt="" />
+            <h1>Yamaha Pacifica 112V</h1>
+            <h3>200€</h3>
+            <p>
+              Una guitarra de la marca Yamaha. Producen guitarras de muy buena
+              calidad. Por este precio es de lo mejorcito que se puede
+              encontrar. Sólo dispone de 22 trastes así que los más metaleros
+              quizá prefieran optar por otra un poco más cañera
+            </p>
+          </div>
+          <div class="slide">
+            <img src="../Images/ibanez.png" alt="" />
+            <h1>Ibanez Gio GRG170DX</h1>
+            <h3>250€</h3>
+            <p>
+              Subiendo un poco más la apuesta nos encontramos con esta Ibanez
+              GRG. Para aquellos que llevan unos meses y les apetece darse un
+              capricho, o para los que prefieren desembolsar un poquito más en
+              la inversión inicial, ésta es la guitarra ideal
+            </p>
+          </div>
+          <div class="slide">
+            <img src="../Images/jackson.png" alt="" />
+            <h1>Jackson JS22</h1>
+            <h3>250€</h3>
+            <p>
+              Marca Jackson. 7 cuerdas. Un aspecto increíble, y 24 trastes con
+              los que volar por los solos, arpeggios y escalas. ¿Qué más se
+              puede pedir?<br />
+              Una fantástica guitarra para sus 250€ de precio
+            </p>
+          </div>
+          <div class="slide">
+            <img src="../Images/PRS.png" alt="" />
+            <h1>PRS SE Custom 24</h1>
+            <h3>750€</h3>
+            <p>
+              Aquí nos plantamos en un salto un poco más grande de precio. Ésta
+              guitarra podría servir como la guitarra ideal para el 90% de la
+              gente. Un acabado impresionante, pastillas y trastes de altísima
+              calidad, y un sonido bestial. Si llevas unos añitos tocando y
+              buscas tu siguiente guitarra. No lo dudes, ésta es una potente
+              candidata
+            </p>
+          </div>
+          <div class="slide">
+            <img src="../Images/rg550.png" alt="" />
+            <h1>Ibanez RG550</h1>
+            <h3>999€</h3>
+            <p>
+              La hermana rebelde de la PRS. Más trastes, más caña. Personalmente
+              no soy muy fan del acabado que trae, y los colores a elegir son escasos
+              y chillones, pero sin duda alguna es una guitarra a considerar si
+              buscas una de muy buena calidad rondando los 1000€
+            </p>
+          </div>
+        </div>
+        <p id="right-arrow" class="arrow">></p>
+      </div>
+      <section class="titulo">
+        <h1>Amplificadores</h1>
+      </section>
+      <img src="../Images/Separator/varios-14.jpg" alt="" class="separador" />
+      <div class="amps">
+      </div>
+    </div>
   </body>
 </html>
